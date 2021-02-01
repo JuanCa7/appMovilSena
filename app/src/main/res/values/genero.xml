@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="generosResourses">
+        <item>Selecciones un genero...</item>
+        <item >M</item>
+        <item>F</item>
+    </string-array>
+</resources>

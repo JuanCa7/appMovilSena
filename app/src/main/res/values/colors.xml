@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#006064</color>
+    <color name="colorPrimaryDark">#00363a</color>
+    <color name="colorAccent">#428e92</color>
+    <color name="fondo">#e1e2e1</color>
+    <color name="titulos">#283747</color>
+    <color name="btnIniciarSesion">#1E8449</color>
+    <color name="bordesbtniniciar">#283747</color>
+    <color name="btn1menu">#E59619</color>
+    <color name="btn2menu">#148F77</color>
+    <color name="white">#fff</color>
+</resources>
