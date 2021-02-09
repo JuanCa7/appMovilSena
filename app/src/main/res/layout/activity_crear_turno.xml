@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/crearTurno"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/titulos"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".CrearTurno">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titleFormCreatePersona"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:text="ASIGNAR TURNO"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnFechaTurno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@color/titulos"
+                android:text="Selecciona una fecha!!" />
+
+            <Spinner
+                android:id="@+id/personaSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"/>
+
+            <Spinner
+                android:id="@+id/jornadaSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"/>
+            <Spinner
+                android:id="@+id/cargoSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"/>
+
+
+            <EditText
+                android:id="@+id/txtDescripcionTurno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Descripción" />
+
+            <Button
+                android:id="@+id/btnCrearTurno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@color/btnIniciarSesion"
+                android:text="Crear" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -5,142 +5,110 @@
     android:id="@+id/idMenu"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/cardview_light_background"
-    tools:context=".Menu">
+    android:orientation="vertical">
+
 
     <Button
-        android:id="@+id/btnListarPersonas"
-        android:layout_width="267dp"
-        android:layout_height="94dp"
-        android:layout_marginTop="32dp"
-        android:background="@drawable/btn2menu"
-        android:gravity="center|end"
-        android:paddingRight="23sp"
-        android:text="LISTAR PERSONAS"
-        android:textColor="#000000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnActionCrearPersona" />
-
-    <Button
-        android:id="@+id/btnListarTurnos"
-        android:layout_width="270dp"
-        android:layout_height="97dp"
-        android:layout_marginTop="40dp"
-        android:background="@drawable/btn2menu"
-        android:gravity="center|end"
-        android:paddingRight="45sp"
-        android:text="LISTAR TURNOS"
-        android:textColor="#000000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnAsignarTurno" />
-
-    <Button
-        android:id="@+id/btnActionCrearPersona"
+        android:id="@+id/crearPersona"
         android:layout_width="268dp"
-        android:layout_height="99dp"
-        android:layout_marginTop="40dp"
-        android:background="@drawable/btn1menu"
-        android:gravity="center|end"
+        android:layout_height="64dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"
+        android:background="@color/btn2menu"
+        android:gravity="clip_horizontal|center|center_horizontal|center_vertical"
         android:paddingRight="34sp"
         android:text="CREAR PERSONA"
-        android:textColor="#000000"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/btnlistarPersonas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.885" />
+
+    <Button
+        android:id="@+id/btnlistarPersonas"
+        android:layout_width="268dp"
+        android:layout_height="64dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="36dp"
+        android:background="@color/bordesbtniniciar"
+        android:paddingRight="34sp"
+        android:text="LISTAR PERSONAS"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/btnActionCrearTurno"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnActionCrearTurno"
+        android:layout_width="268dp"
+        android:layout_height="64dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="36dp"
+        android:background="@color/btn2menu"
+        android:paddingRight="34sp"
+        android:text="CREAR TURNO"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/btnlistarTurnos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnlistarTurnos"
+        android:layout_width="268dp"
+        android:layout_height="64dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="36dp"
+        android:background="@color/bordesbtniniciar"
+        android:paddingRight="34sp"
+        android:text="LISTAR TURNOS"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/btnSeguimientoEP"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btnAsignarTurno"
-        android:layout_width="273dp"
-        android:layout_height="97dp"
-        android:layout_marginTop="36dp"
-        android:background="@drawable/btn1menu"
-        android:gravity="center|end"
+        android:id="@+id/btnSeguimientoEP"
+        android:layout_width="268dp"
+        android:layout_height="64dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:background="@color/btn1menu"
         android:paddingRight="34sp"
-        android:text="AsignarTurnos"
-        android:textColor="#000000"
+        android:text="SEGUIMIENTO E P"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/btnCerrarSesion"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnListarPersonas" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="278dp"
-        android:layout_height="78dp"
-        android:layout_marginTop="32dp"
-        android:background="@color/colorPrimary"
-        android:text="Seguimiento Etapa Productiva"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.541"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnListarTurnos"
-        app:layout_constraintVertical_bias="0.049" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="76dp"
-        android:layout_height="65dp"
-        app:layout_constraintBottom_toBottomOf="@+id/btnListarPersonas"
-        app:layout_constraintEnd_toEndOf="@+id/btnListarPersonas"
-        app:layout_constraintHorizontal_bias="0.045"
-        app:layout_constraintStart_toStartOf="@+id/btnListarPersonas"
-        app:layout_constraintTop_toTopOf="@+id/btnListarPersonas"
-        app:layout_constraintVertical_bias="0.472"
-        app:srcCompat="@drawable/list" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="76dp"
-        android:layout_height="65dp"
-        app:layout_constraintBottom_toBottomOf="@+id/btnListarTurnos"
-        app:layout_constraintEnd_toEndOf="@+id/btnListarTurnos"
-        app:layout_constraintHorizontal_bias="0.051"
-        app:layout_constraintStart_toStartOf="@+id/btnListarTurnos"
-        app:layout_constraintTop_toTopOf="@+id/btnListarTurnos"
-        app:layout_constraintVertical_bias="0.375"
-        app:srcCompat="@drawable/list" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="82dp"
-        android:layout_height="69dp"
-        app:layout_constraintBottom_toBottomOf="@+id/btnAsignarTurno"
-        app:layout_constraintEnd_toEndOf="@+id/btnAsignarTurno"
-        app:layout_constraintHorizontal_bias="0.047"
-        app:layout_constraintStart_toStartOf="@+id/btnAsignarTurno"
-        app:layout_constraintTop_toTopOf="@+id/btnAsignarTurno"
-        app:layout_constraintVertical_bias="0.428"
-        app:srcCompat="@drawable/addturno" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="78dp"
-        android:layout_height="69dp"
-        app:layout_constraintBottom_toBottomOf="@+id/btnActionCrearPersona"
-        app:layout_constraintEnd_toEndOf="@+id/btnActionCrearPersona"
-        app:layout_constraintHorizontal_bias="0.036"
-        app:layout_constraintStart_toStartOf="@+id/btnActionCrearPersona"
-        app:layout_constraintTop_toTopOf="@+id/btnActionCrearPersona"
-        app:layout_constraintVertical_bias="0.466"
-        app:srcCompat="@drawable/addpersona" />
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnCerrarSesion"
         android:layout_width="268dp"
         android:layout_height="64dp"
-        android:background="#CF064A"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:background="#CF062E"
         android:text="Cerrar Sesión"
         android:textColor="#FFF"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2"
-        app:layout_constraintVertical_bias="0.483" />
-
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
 </android.support.constraint.ConstraintLayout>

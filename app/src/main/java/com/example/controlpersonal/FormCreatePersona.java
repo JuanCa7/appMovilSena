@@ -1,8 +1,8 @@
 package com.example.controlpersonal;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -235,9 +235,10 @@ public class FormCreatePersona extends AppCompatActivity implements View.OnClick
         StringRequest stringRequest = new StringRequest(Request.Method.POST, urlCrearP, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
-                Toast.makeText(FormCreatePersona.this,"Usuario Creado",Toast.LENGTH_SHORT).show();
+                Toast.makeText(FormCreatePersona.this,"Usuario Creado Correctamente!!",Toast.LENGTH_LONG).show();
                 vaciarCampos();
-
+                Intent mostrarMenu = new Intent(getApplicationContext(),Menu.class);
+                startActivity(mostrarMenu);
             }
         }, new Response.ErrorListener() {
             @Override
@@ -288,4 +289,5 @@ public class FormCreatePersona extends AppCompatActivity implements View.OnClick
     public void onClick(View view) {
 
     }
+
 }

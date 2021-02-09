@@ -11,8 +11,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar"
         android:usesCleartextTraffic="true">
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".AsignarTurno" />
+        <activity android:name=".CrearTurno"></activity>
+        <activity android:name=".MainActivity" />
         <activity android:name=".FormCreatePersona" />
         <activity android:name=".Menu" />
         <activity android:name=".PresentacionActivity">
@@ -23,8 +23,8 @@
             </intent-filter>
         </activity>
     </application>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
     <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
 </manifest>
