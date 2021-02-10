@@ -11,20 +11,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar"
         android:usesCleartextTraffic="true">
-        <activity android:name=".CrearTurno"></activity>
+        <activity android:name=".CrearTurno"/>
         <activity android:name=".MainActivity" />
         <activity android:name=".FormCreatePersona" />
-        <activity android:name=".Menu" />
+        <activity android:name=".Menu"/>
+
         <activity android:name=".PresentacionActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
     <uses-permission android:name="android.permission.INTERNET" />
-
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
 </manifest>
