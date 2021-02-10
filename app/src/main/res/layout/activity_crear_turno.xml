@@ -32,6 +32,8 @@
                 android:id="@+id/btnFechaTurno"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/date"
+                android:paddingHorizontal="40dp"
                 android:layout_margin="20dp"
                 android:background="@color/titulos"
                 android:text="Selecciona una fecha!!" />
