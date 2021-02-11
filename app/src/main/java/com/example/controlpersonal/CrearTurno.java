@@ -23,7 +23,6 @@ import com.android.volley.toolbox.Volley;
 import com.example.controlpersonal.ClasesBd.Cargo;
 import com.example.controlpersonal.ClasesBd.Jornada;
 import com.example.controlpersonal.ClasesBd.Persona;
-import com.google.gson.JsonArray;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -253,7 +252,7 @@ public class CrearTurno extends AppCompatActivity {
             @Override
             public void onResponse(String response) {
                 Toast.makeText(CrearTurno.this,"Turno asignado correctamente!!!",Toast.LENGTH_LONG).show();
-                Intent mostrarMenu = new Intent(getApplicationContext(),Menu.class);
+                Intent mostrarMenu = new Intent(getApplicationContext(), Menu.class);
                 startActivity(mostrarMenu);
             }
         }, new Response.ErrorListener() {

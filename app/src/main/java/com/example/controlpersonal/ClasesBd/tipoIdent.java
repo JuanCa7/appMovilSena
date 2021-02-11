@@ -1,4 +1,4 @@
-package com.example.controlpersonal;
+package com.example.controlpersonal.ClasesBd;
 
 public class tipoIdent {
     private int id;

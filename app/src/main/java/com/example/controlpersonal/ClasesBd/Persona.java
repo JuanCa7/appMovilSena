@@ -7,6 +7,7 @@ public class Persona {
     private int celular;
     private String numIdentificacion;
     private String usuario;
+    private String estado;
 
     public Persona(int id_Persona, String nombre, String apellido) {
         this.id_Persona = id_Persona;
@@ -21,6 +22,16 @@ public class Persona {
         this.celular = celular;
         this.numIdentificacion = numIdentificacion;
         this.usuario = usuario;
+    }
+
+    public Persona(int id_Persona, String nombre, String apellido, int celular, String numIdentificacion, String usuario, String estado) {
+        this.id_Persona = id_Persona;
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.celular = celular;
+        this.numIdentificacion = numIdentificacion;
+        this.usuario = usuario;
+        this.estado = estado;
     }
 
     public int getId_Persona() {
@@ -69,6 +80,14 @@ public class Persona {
 
     public void setUsuario(String usuario) {
         this.usuario = usuario;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
     }
 
     @Override

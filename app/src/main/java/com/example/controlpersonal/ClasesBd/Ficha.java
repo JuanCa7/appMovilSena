@@ -1,4 +1,4 @@
-package com.example.controlpersonal;
+package com.example.controlpersonal.ClasesBd;
 
 import java.time.LocalDate;
 

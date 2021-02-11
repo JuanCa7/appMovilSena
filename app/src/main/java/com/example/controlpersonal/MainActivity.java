@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void recuperarPreferencias(){
         SharedPreferences preferences = getSharedPreferences("usuarioSesion", Context.MODE_PRIVATE);
-        usuario.setText(preferences.getString("usuario","Camilo@gmail.com"));
-        password.setText(preferences.getString("password","12233"));
+        usuario.setText(preferences.getString("usuario","jczuniga@misena.edu.co"));
+        password.setText(preferences.getString("password","22122"));
     }
 }

@@ -18,6 +18,9 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.controlpersonal.ClasesBd.Ficha;
+import com.example.controlpersonal.ClasesBd.Rol;
+import com.example.controlpersonal.ClasesBd.tipoIdent;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -43,7 +46,7 @@ public class FormCreatePersona extends AppCompatActivity implements View.OnClick
     String genero;
 
     List<Ficha> fichas = new ArrayList<>();
-    List<tipoIdent> identificaciones = new ArrayList<>();
+    List<com.example.controlpersonal.ClasesBd.tipoIdent> identificaciones = new ArrayList<>();
     List<Rol> roles = new ArrayList<>();
 
     ArrayAdapter<Rol> rolesAdapter;
