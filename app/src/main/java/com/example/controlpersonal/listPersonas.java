@@ -31,7 +31,7 @@ public class listPersonas extends AppCompatActivity {
 
     List<Persona> personaList;
 
-    RequestQueue requestQueueTurnos;
+    RequestQueue requestQueuePersonas;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,7 +44,7 @@ public class listPersonas extends AppCompatActivity {
         personaList = new ArrayList<>();
 
         //Inicializamos el request quee
-        requestQueueTurnos = Volley.newRequestQueue(this);
+        requestQueuePersonas = Volley.newRequestQueue(this);
 
         //Metodo para llenar la lista de personas
         mostrar();
@@ -80,7 +80,7 @@ public class listPersonas extends AppCompatActivity {
 
             }
         });
-        requestQueueTurnos.add(stringRequest);
+        requestQueuePersonas.add(stringRequest);
     }
 
 }

@@ -8,10 +8,11 @@
 
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewPersona"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:visibility="visible"
         android:layout_marginVertical="10dp"
+        android:visibility="visible"
         app:cardCornerRadius="30dp">
 
         <RelativeLayout

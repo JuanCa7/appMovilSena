@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewTurno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:visibility="visible"
+        app:cardCornerRadius="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/cardPersona"
+                android:drawableTop="@drawable/userturno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="200dp"
+                android:fontFamily="casual"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="CAMILO SANDOVAL"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/cardEstado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="200dp"
+                android:fontFamily="casual"
+                android:gravity="center"
+                android:layout_marginTop="120dp"
+                android:text="PENDIENTE"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/cardFecha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:drawableLeft="@drawable/turnofecha"
+                    android:paddingHorizontal="20dp"
+                    android:fontFamily="casual"
+                    android:gravity="center"
+                    android:text="02/05/2021"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/cardJornada"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginTop="70dp"
+                    android:drawableLeft="@drawable/sun"
+                    android:paddingHorizontal="20dp"
+                    android:fontFamily="casual"
+                    android:gravity="center"
+                    android:text="Mañana"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/cardCargo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginTop="140dp"
+                    android:drawableLeft="@drawable/cargo"
+                    android:paddingHorizontal="20dp"
+                    android:fontFamily="casual"
+                    android:gravity="center"
+                    android:text="Cajero"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

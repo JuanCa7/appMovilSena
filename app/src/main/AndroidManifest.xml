@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.controlpersonal">
-    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -12,7 +11,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar"
         android:usesCleartextTraffic="true">
-        <activity android:name=".listPersonas"></activity>
+        <activity android:name=".listTurnos"></activity>
+        <activity android:name=".listPersonas" />
         <activity android:name=".CrearTurno" />
         <activity android:name=".MainActivity" />
         <activity android:name=".FormCreatePersona" />
@@ -27,6 +27,6 @@
     </application>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
-
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>
