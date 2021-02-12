@@ -5,7 +5,6 @@
     android:id="@+id/Login"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -34,13 +33,16 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
-                android:backgroundTint="@android:color/background_dark"
-                android:drawableLeft="@drawable/icon_email"
+                android:backgroundTint="@color/white"
+                android:drawableLeft="@drawable/email"
+                android:drawablePadding="10dp"
                 android:ems="10"
-                android:textColor="@color/cardview_dark_background"
+                android:fontFamily="monospace"
                 android:hint="Usuario"
                 android:inputType="textPersonName"
-                android:paddingLeft="5dp" />
+                android:paddingLeft="5dp"
+                android:textColor="#FFF"
+                android:textSize="20dp" />
 
             <EditText
                 android:id="@+id/edtPassword"
@@ -48,15 +50,17 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="10dp"
-
                 android:layout_marginEnd="8dp"
-                android:textColor="@color/cardview_dark_background"
-                android:backgroundTint="@android:color/background_dark"
-                android:drawableLeft="@drawable/icon_lock"
+                android:backgroundTint="@color/white"
+                android:drawableLeft="@drawable/lock"
+                android:drawablePadding="10dp"
                 android:ems="10"
+                android:fontFamily="monospace"
                 android:hint="Password"
                 android:inputType="textPassword"
-                android:paddingLeft="5dp" />
+                android:paddingLeft="5dp"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
 
             <Button
                 android:id="@+id/btnIniciarSesion"
@@ -65,7 +69,8 @@
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="30dp"
                 android:layout_marginRight="15dp"
-                android:background="#1976d2"
+                android:background="@color/mostaza"
+                android:fontFamily="monospace"
                 android:text="Iniciar Sesión"
                 android:textColor="#FFF"
                 android:textSize="18sp" />

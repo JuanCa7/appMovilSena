@@ -4,7 +4,6 @@
     android:id="@+id/crearTurno"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/titulos"
     android:orientation="vertical"
     android:gravity="center"
     tools:context=".CrearTurno">
@@ -25,7 +24,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="44dp"
                 android:text="ASIGNAR TURNO"
-                android:textSize="25dp"
+                android:fontFamily="monospace"
+                android:textColor="@color/btn1menu"
+                android:textSize="40dp"
                 android:textStyle="bold" />
 
             <Button
@@ -35,7 +36,7 @@
                 android:drawableLeft="@drawable/date"
                 android:paddingHorizontal="40dp"
                 android:layout_margin="20dp"
-                android:background="@color/titulos"
+                android:background="@color/mostaza"
                 android:text="Selecciona una fecha!!" />
 
             <Spinner
@@ -70,7 +71,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
-                android:background="@color/btnIniciarSesion"
+                android:background="@color/mostaza"
                 android:text="Crear" />
         </LinearLayout>
     </ScrollView>

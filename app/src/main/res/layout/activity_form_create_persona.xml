@@ -5,7 +5,6 @@
     android:id="@+id/formCreatePersona"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/titulos"
     tools:context=".FormCreatePersona">
 
     <ScrollView
@@ -21,16 +20,21 @@
             <TextView
                 android:id="@+id/titleFormCreatePersona"
                 android:layout_width="wrap_content"
+                android:fontFamily="monospace"
+                android:textColor="@color/btn1menu"
+                android:textSize="40dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="44dp"
                 android:text="CREAR PERSONA"
-                android:textSize="25dp"
+
                 android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/txtNombre"
                 android:layout_width="335dp"
                 android:layout_height="66dp"
+                android:fontFamily="monospace"
+                android:textColor="@color/white"
                 android:layout_marginTop="56dp"
                 android:ems="10"
                 android:hint="Nombre"
@@ -40,6 +44,8 @@
                 android:id="@+id/txtAprellido"
                 android:layout_width="335dp"
                 android:layout_height="66dp"
+                android:fontFamily="monospace"
+                android:textColor="@color/white"
                 android:layout_marginTop="44dp"
                 android:ems="10"
                 android:hint="Apellido"
@@ -49,12 +55,16 @@
             <Spinner
                 android:id="@+id/identSpinner"
                 android:layout_width="335dp"
+                android:fontFamily="monospace"
+                android:textColor="@color/white"
                 android:layout_marginTop="44dp"
                 android:layout_height="wrap_content"/>
             <EditText
                 android:id="@+id/txtNumIdent"
                 android:layout_width="335dp"
                 android:layout_height="66dp"
+                android:fontFamily="monospace"
+                android:textColor="@color/white"
                 android:layout_marginTop="40dp"
                 android:ems="10"
                 android:hint="Numero Identificación"
@@ -63,6 +73,8 @@
                 android:id="@+id/txtTelefono"
                 android:layout_width="335dp"
                 android:layout_height="66dp"
+                android:fontFamily="monospace"
+                android:textColor="@color/white"
                 android:layout_marginTop="40dp"
                 android:ems="10"
                 android:hint="Telefono"
@@ -71,6 +83,8 @@
             <Spinner
                 android:id="@+id/spinnerGenero"
                 android:layout_width="335dp"
+                android:fontFamily="monospace"
+                android:textColor="@color/white"
                 android:layout_marginTop="50dp"
                 android:layout_height="wrap_content"/>
 
@@ -78,18 +92,24 @@
                 android:id="@+id/rolesSpinner"
                 android:layout_width="335dp"
                 android:layout_marginTop="44dp"
+                android:fontFamily="monospace"
+                android:textColor="@color/white"
                 android:layout_height="wrap_content"/>
 
             <Spinner
                 android:id="@+id/fichaSpinner"
                 android:layout_width="335dp"
                 android:layout_marginTop="50dp"
+                android:fontFamily="monospace"
+                android:textColor="@color/white"
                 android:layout_height="wrap_content"/>
 
             <EditText
                 android:id="@+id/txtCorreo"
                 android:layout_width="335dp"
                 android:layout_height="66dp"
+                android:fontFamily="monospace"
+                android:textColor="@color/white"
                 android:layout_marginTop="40dp"
                 android:ems="10"
                 android:hint="Correo"
@@ -98,6 +118,8 @@
                 android:id="@+id/txtPasswordLogin"
                 android:layout_width="335dp"
                 android:layout_height="66dp"
+                android:fontFamily="monospace"
+                android:textColor="@color/white"
                 android:layout_marginTop="40dp"
                 android:ems="10"
                 android:hint="Contraseña"
@@ -108,7 +130,9 @@
                 android:layout_height="47dp"
                 android:layout_marginTop="40dp"
                 android:layout_marginBottom="76dp"
-                android:background="@color/btnIniciarSesion"
+                android:fontFamily="monospace"
+                android:textColor="@color/white"
+                android:background="@color/mostaza"
                 android:text="CREAR" />
         </LinearLayout>
     </ScrollView>

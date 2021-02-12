@@ -3,7 +3,6 @@
     android:orientation="vertical"
     android:gravity="center"
     android:id="@+id/idMenu"
-    android:background="@color/cardview_shadow_start_color"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -11,14 +10,17 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
         android:layout_margin="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="monospace"
+        android:textColor="@color/btn1menu"
         android:text="PERSONAL Y TURNOS"
-        android:textSize="30dp" />
+        android:textSize="36sp" />
     <Button
         android:id="@+id/crearPersona"
         android:layout_width="268dp"
         android:layout_height="64dp"
+        android:fontFamily="monospace"
         android:drawableLeft="@drawable/add_people"
         android:paddingHorizontal="40dp"
         android:layout_margin="10dp"
@@ -30,6 +32,7 @@
         android:id="@+id/btnlistarPersonas"
         android:layout_width="268dp"
         android:layout_height="64dp"
+        android:fontFamily="monospace"
         android:layout_margin="10dp"
         android:drawableLeft="@drawable/list"
         android:paddingHorizontal="40dp"
@@ -42,6 +45,7 @@
         android:layout_width="268dp"
         android:layout_height="64dp"
         android:layout_margin="10dp"
+        android:fontFamily="monospace"
         android:drawableLeft="@drawable/add_turno"
         android:paddingHorizontal="40dp"
         android:background="@color/btn2menu"
@@ -53,6 +57,7 @@
         android:layout_width="268dp"
         android:layout_height="64dp"
         android:layout_margin="10dp"
+        android:fontFamily="monospace"
         android:drawableLeft="@drawable/list"
         android:paddingHorizontal="40dp"
         android:background="@color/bordesbtniniciar"
@@ -64,6 +69,7 @@
         android:layout_width="268dp"
         android:layout_height="64dp"
         android:layout_margin="10dp"
+        android:fontFamily="monospace"  
         android:drawableLeft="@drawable/etapa_prod"
         android:paddingHorizontal="40dp"
         android:background="@color/btn1menu"
@@ -78,6 +84,7 @@
         android:background="@color/cardview_shadow_start_color"
         android:drawableRight="@drawable/exit"
         android:paddingHorizontal="40dp"
+        android:fontFamily="monospace"
         android:text="Cerrar Sesión"
         android:textColor="#FFF"
         android:textSize="18sp" />
