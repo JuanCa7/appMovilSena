@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Menu extends AppCompatActivity {
 
-    Button btnCrearPersona,btnCrearTurno,btnCerrarSesion,btnListarPersonas,btnlistarTurnos;
+    Button btnCrearPersona,btnCrearTurno,btnCerrarSesion,btnListarPersonas,btnlistarTurnos,btnSeguimientoEP;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,7 +21,15 @@ public class Menu extends AppCompatActivity {
         btnCrearTurno = findViewById(R.id.btnActionCrearTurno);
         btnListarPersonas = findViewById(R.id.btnlistarPersonas);
         btnlistarTurnos = findViewById(R.id.btnlistarTurnos);
+        btnSeguimientoEP = findViewById(R.id.btnSeguimientoEP);
 
+        btnSeguimientoEP.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent mostrarListadoH = new Intent(getApplicationContext(),listContadorHoras.class);
+                startActivity(mostrarListadoH);
+            }
+        });
         btnlistarTurnos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

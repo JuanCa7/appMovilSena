@@ -18,7 +18,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="file:/$PROJECT_DIR$/../../../Camilo%20Sandoval/AppData/Local/Android/Sdk/icons/material/materialiconsround/supervisor_account/round_supervisor_account_24.xml" />
+                                      <entry key="url" value="file:/$PROJECT_DIR$/../../../Camilo%20Sandoval/AppData/Local/Android/Sdk/icons/material/materialicons/fiber_pin/baseline_fiber_pin_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -28,8 +28,8 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="color" value="ffffff" />
-                            <entry key="outputName" value="userturno" />
+                            <entry key="color" value="4449e7" />
+                            <entry key="outputName" value="ficha" />
                             <entry key="sourceFile" value="C:\Users\Camilo Sandoval\AndroidStudioProjects\ControlPersonal" />
                           </map>
                         </option>

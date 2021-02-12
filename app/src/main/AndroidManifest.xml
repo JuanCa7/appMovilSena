@@ -11,7 +11,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar"
         android:usesCleartextTraffic="true">
-        <activity android:name=".listTurnos"></activity>
+        <activity android:name=".listContadorHoras"></activity>
+        <activity android:name=".listTurnos" />
         <activity android:name=".listPersonas" />
         <activity android:name=".CrearTurno" />
         <activity android:name=".MainActivity" />
@@ -25,8 +26,8 @@
             </intent-filter>
         </activity>
     </application>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
     <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
 </manifest>

@@ -34,7 +34,6 @@ public class AdapterTurno extends RecyclerView.Adapter<AdapterTurno.HolderTurnos
     @Override
     public void onBindViewHolder(@NonNull HolderTurnos holder, int position) {
         Turno turno = turnoList.get(position);
-
         holder.txtPersona.setText(turno.getNombreP()+" "+turno.getApellidoP());
         holder.txtJornada.setText(turno.getNombreJ());
         holder.txtCargo.setText(turno.getNombreC());
@@ -52,7 +51,6 @@ public class AdapterTurno extends RecyclerView.Adapter<AdapterTurno.HolderTurnos
         TextView txtPersona,txtFecha,txtJornada,txtCargo,txtEstado;
         public HolderTurnos(@NonNull View itemView) {
             super(itemView);
-
             txtPersona = itemView.findViewById(R.id.cardPersona);
             txtFecha = itemView.findViewById(R.id.cardFecha);
             txtJornada = itemView.findViewById(R.id.cardJornada);
